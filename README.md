@@ -21,7 +21,7 @@ Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [
 
 Interactive Elixir (1.4.4) - press Ctrl+C to exit (type h() ENTER for help)
 
-iex(1)> Kennel.ChromeDriver.start_session
+iex(1)> Kennel.start_session
 "93ed4f4cf6534b901b850bbaa99cc9ec"
 
 iex(2)> Hound.current_session_id
@@ -33,7 +33,7 @@ Then onwards with your desired [Hound](https://hexdocs.pm/hound/readme.html) int
 For example:
 
 ```
-iex(3)> use Hound.Helpers        
+iex(3)> use Hound.Helpers
 Hound.Helpers
 
 iex(4)> navigate_to "https://google.com"
